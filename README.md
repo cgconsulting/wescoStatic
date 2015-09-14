@@ -1,0 +1,2 @@
+# wescoStatic
+WESCO Website Files
