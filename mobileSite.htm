@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wesco Sports Center</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- the three things that jQuery Mobile needs to work -->
+    <link rel="stylesheet" href="jquery.mobile-1.0rc2.css" />
+    <script src="jquery-1.6.4.js" type="text/javascript"></script>
+    <script src="jquery.mobile-1.0rc2.js" type="text/javascript"></script>
+    <style>
+		#imgBanner {
+			width:100%;
+			height:50%;	
+		}
+		#imgBanner img{
+			width:100%;
+			height:inherit;	
+		}
+		#aboutUs h3{
+			text-align:center;
+		}
+		#aboutUs{
+			text-align:justify;
+			font-size:1em;
+			font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;	
+		}
+		#brands li{
+			padding-left:5px;
+			padding-top:10px;
+			padding-bottom:10px;
+			margin:2px;	
+		}
+		#brands h3{
+			text-align:center;
+		}
+		#brands p{
+			text-align:center;
+			font-size:1.1em;
+			font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+			padding-bottom:10px
+				
+		}
+		#social{
+			padding:5px;
+			background:white;
+			text-align:center;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+		}
+		#social img{
+			padding-left:20px;
+			text-align:center;	
+		}
+		#services h3 {
+			text-align:center;	
+		}
+		#services p{
+			text-align:center;
+			font-size:1em;
+			font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+			padding-bottom:10px	
+		}
+		#storeHours{
+			margin:0 auto;
+				
+		}
+		#storeHours td{
+			padding-top:10px;	
+		}
+		.hours{
+			font-weight:normal;
+		}
+		.days{
+			text-align:center;	
+		}
+		#aboutColap li{
+			font-weight:normal;
+			text-align:justify;	
+		}
+		#contactForm h2{
+			font-size:1.3em;
+			text-align:center;
+		}
+		#contactForm p{
+			text-align:center;
+			font-weight:normal;	
+		}
+		footer{
+			text-align:center;	
+		}	
+		#locationColap li{
+			text-align:center;	
+			font-weight:normal;
+		}
+		header{
+			height:50px;	
+		}
+		h1{
+			font-size:1.5em;	
+		}
+	</style>
+</head>
+<body>
+    <!--Designed by Justin DoBosh!-->
+    <!-- This is the first page -->
+    <section id="storeInfo" data-role="page">
+        <header data-role="header">
+        <h1>Wesco Sports Center</h1>
+        <a href="#cont" class=" ui-btn-right" id="contBTN">Contact</a>
+        </header>
+        <nav data-role="navbar">
+        <ul>
+            <li><a href="#" class="ui-btn-active ui-state-persist" data-icon="info">Store Info</a></li>
+            <li><a href="#outfiters" data-icon="star">Brands</a></li>
+            <li><a href="#serv" data-icon="check">Services</a></li>
+        </ul>
+        </nav>
+        <div data-role="content">
+        <div id="imgBanner">
+        	<img src="c1.png" alt="banner img"/>
+            </div>
+            <div id="social">
+           <a href="https://www.facebook.com/pages/Wesco-Sports-Center/201665960345" title="like us"><img src="facebook-3-32.jpg"/></a><a href="https://twitter.com/WescoSports" title="follow us"><img src="twitter-3-32.jpg"/></a><a href="https://plus.google.com/103116852869641545844/posts?hl=en" title="follow us"><img src="google-plus-3-32.jpg"/></a><a href="mailto:email@wescosports.com" title="email us"><img src="email-13-32.jpg"/></a>
+            </div>
+            <div id="aboutUs">
+            <div data-role="collapsible" data-inset="false">
+                <h3>Store Hours</h3>
+                <ul data-role="listview">
+                    <li data-icon="check">	
+                <table id="storeHours">
+        	<!--<tr>
+            	<th id="hoursTitle">Store Hours<hr /></th>
+            </tr>!-->
+            <tr>
+            	<td class="days">Mon, Tues, Wed</td>
+            </tr>
+            <tr>
+            	<td class="hours">10:00am - 6:00pm</td>
+            </tr>
+            <tr>
+            	<td  class="days">Thur, Fri</td>
+            </tr>
+            <tr>
+            	<td  class="hours">10:00am - 7:00pm</td>
+            </tr>
+            <tr>
+            	<td  class="days">Sat</td>
+            </tr>
+            <tr>
+            	<td class="hours">10:00am - 5:30pm</td>
+            </tr>
+            <tr>
+            	<td class="days">Sun</td>
+            </tr>
+            <tr>
+            	<td  class="hours">11:00am - 3:00pm</td>
+            </tr>
+            
+        </table>
+        </li>
+        </ul>
+        </div>
+        <div data-role="collapsible" data-inset="false" id="locationColap">
+                <h3>Location</h3>
+                <ul data-role="listview">
+                    <li data-icon="check">
+                Wesco Sports Center<br /><br /><i>Conveniently located at</i><br /><br /><b>270 Federal Rd Brookfield, CT</b>
+</li>
+</ul>
+            </div>
+        <div data-role="collapsible" data-inset="false" id="aboutColap">
+                <h3>About Us</h3>
+                <ul data-role="listview">
+                    <li data-icon="check">
+                Here at Wesco Sports Center we share your love for the game! With top name brands, high quality equipment, and a knowledgeable staff Wesco has everything you need to win your next game.<br /><br /> From humble beginnings to a hockey mecca in Southern Connecticut. With the support of die-hard fans like you, Wesco has grown to be a trusted and reliable source for all of your ice hockey needs - for close to forty years and counting.<br /><br /> Our commitment to growing and serving you is evident in our vast selection of gear and a 3 room facility dedicated specifically to goaltenders.<br /><br /> Our knowledgable sales staff will provide you with a level of service and information that you cannot find anywhere else. We look forward to serving you both online, as well as in person in our Brookfield, Connecticut store.<br /><br /> Like Denis Leary says, "If we don't have it, it doesn't exist!"
+</li>
+</ul>
+            </div>
+        </div>
+        </div>
+        <footer data-role="footer">
+	        <p> &copy; 2013 Wesco Sports Center. All Rights Reserved.</p>
+        </footer>
+     </section>
+     
+         <!-- This is the second page -->
+    <section id="outfiters" data-role="page">
+        <header data-role="header">
+        <h1>Wesco Sports Center</h1>
+        <a href="#cont" class=" ui-btn-right">Contact</a>
+        </header>
+        <nav data-role="navbar">
+        <ul>
+            <li><a href="#storeInfo" data-icon="info">Store Info</a></li>
+            <li><a href="#" class="ui-btn-active ui-state-persist" data-icon="star">Brands</a></li>
+            <li><a href="#serv" data-icon="check">Services</a></li>
+        </ul>
+        </nav>
+        <div data-role="content">
+        	<div id="imgBanner">
+        	<img src="c1.png" alt="banner img"/>
+            </div>
+            <div id="brands">
+            <h3>Our Brands</h3><hr />
+            <p>The Brands You Know, Trust and Want!<hr /></p>
+            
+            	<ul data-role="listview">
+            <li>Hockey
+            <ul data-role="listview">
+            <li data-role="divider" data-icon="back"><a href="#outfiters"></a></li>
+                <li>A & R</li>
+                <li>Bauer</li>
+                <li>Cascade</li>
+                <li>CCM</li>
+                <li>Chalk Talk</li>
+                <li>Easton</li>
+                <li>Elite</li>
+                <li>Gongshow</li>
+                <li>Graf</li>
+                <li>Montreal</li>
+                <li>Oakley</li>
+                <li>Pro Guard</li>
+                <li>RBK</li>
+                <li>Suace Hockey</li>
+                <li>Sherwood</li>
+                <li>Shock Doctor</li>
+                <li>Stiga</li>
+                <li>Tackla</li>
+                <li>Warrior</li>
+            </ul>
+            </li>
+            </ul>
+            <ul data-role="listview">
+            <li>Goalie
+            <ul data-role="listview">
+            <li data-role="divider" data-icon="back"><a href="#outfiters"></a></li>
+                <li>Warrior</li>
+                <li>Bauer</li>
+                <li>Brine</li>
+                <li>Brown</li>
+                <li>CCM</li>
+                <li>Eddy</li>
+                <li>Hackva</li>
+                <li>RBK</li>
+                <li>Sherwood</li>
+                <li>Tackla</li>
+                <li>Vaughn</li>
+                <li>Wall</li>
+            </ul>
+            </li>
+            </ul>
+            <ul data-role="listview">
+            <li>Lacrosse
+            <ul data-role="listview">
+            <li data-role="divider" data-icon="back"><a href="#outfiters"></a></li>
+                <li>Warrior</li>
+                <li>STX</li>
+                <li>Brine</li>
+            </ul>
+            </li>
+            </ul>
+            
+           <ul data-role="listview">
+            <li>Figure Skating
+            <ul data-role="listview">
+            <li data-role="divider" data-icon="back"><a href="#outfiters"></a></li>
+                <li>Gam</li>
+                <li>Glacier</li>
+                <li>Jackson</li>
+                <li>John Wilson</li>
+                <li>MK Blades</li>
+                <li>Mondor</li>
+                <li>Softec</li>
+                <li>SP Terry</li>
+                <li>Riedell</li>
+                <li>RBK</li>
+                <li>Ultimate Blades</li>
+                <li>Zuca</li>
+            </ul> 
+            </li>
+            </ul>
+            </div>
+       </div>
+        <footer data-role="footer">
+	        <p> &copy; 2013 Wesco Sports Center. All Rights Reserved.</p>
+        </footer>
+        </section>
+        <!-- This is the third page -->
+    <section id="serv" data-role="page">
+        <header data-role="header">
+        <h1>Wesco Sports Center</h1>
+        <a href="#cont" class=" ui-btn-right">Contact</a>
+        </header>
+        <nav data-role="navbar">
+        <ul>
+            <li><a href="#storeInfo" data-icon="info">Store Info</a></li>
+            <li><a href="#outfiters" data-icon="star">Brands</a></li>
+            <li><a href="#" class="ui-btn-active ui-state-persist" data-icon="check">Services</a></li>
+        </ul>
+        </nav>
+        <div data-role="content">
+        	<div id="imgBanner">
+        	<img src="c1.png" alt="banner img"/>
+            </div>
+            <div id="services">
+            <h3>Our Services</h3><hr />
+            <p>Our highly skilled, and knowledgeable staff are able to help you with everything from custom jersey orders to equipment repairs.<hr /></p>
+            
+                 <div data-role="collapsible" data-inset="false">
+                <h3>Hockey Services</h3>
+                <ul data-role="listview">
+                    <li data-icon="check"><a href="#">Equipment Repairs</a></li>
+                    <li data-icon="check"><a href="#">Sharpening</a></li>
+                    <li data-icon="check"><a href="#">Elite Sharpening</a></li>
+                    <li data-icon="check"><a href="#">Taping</a></li>
+                    <li data-icon="check"><a href="#">Custom Jersey Orders</a></li>
+                    <li data-icon="check"><a href="#">Custom Team Orders</a></li>
+                </ul>
+            </div><!-- /collapsible -->
+            <div data-role="collapsible" data-inset="false">
+                <h3>Goalie Services</h3>
+                <ul data-role="listview">
+                    <li data-icon="check"><a href="#">Goalie Equipment Repairs</a></li>
+                    <li data-icon="check"><a href="#">Goalie Instruction</a></li>
+                    <li data-icon="check"><a href="#">Custom Goalie Orders</a></li>
+                    <li data-icon="check"><a href="#">Sharpening</a></li>
+                    <li data-icon="check"><a href="#">Elite Sharpening</a></li>
+                    <li data-icon="check"><a href="#">Taping</a></li>
+                </ul>
+            </div><!-- /collapsible -->
+            <div data-role="collapsible" data-inset="false">
+                <h3>Lacrosse Services</h3>
+                <ul data-role="listview">
+               		<li><a href="#">Standard Stringing</a>
+                    <ul data-role="listview">
+                    <li data-role="divider" data-icon="back"><a href="#serv"></a></li>
+                    	<li data-icon="check"><a href="#">Power Pocket</a>
+                        <li data-icon="check"><a href="#">V-Pocket</a>
+                    </ul>
+                    </li>
+                    <li><a href="#">Custom Stringing</a>
+                    <ul data-role="listview">
+                    <li data-role="divider" data-icon="back"><a href="#serv"></a></li>
+                    	<li data-icon="check"><a href="#">Traditional</a>
+                        <li data-icon="check"><a href="#">Diamond</a>
+                        <li data-icon="check"><a href="#">Double Diamond</a>
+                        <li data-icon="check"><a href="#">Rocket Pocket</a>
+                    </ul>
+                    </li>
+                    <li><a href="#">Head Dying</a>
+                    <ul data-role="listview">
+                    <li data-role="divider" data-icon="back"><a href="#serv"></a></li>
+                    	<li data-icon="check"><a href="#">One Color</a>
+                        <li data-icon="check"><a href="#">Two Colors</a>
+                        <li data-icon="check"><a href="#">Three Colors</a>
+                    </ul>
+                    </li>
+                    <li data-icon="check"><a href="#">Equipment Repairs</a></li>
+                    <li data-icon="check"><a href="#">Custom Jersey Orders</a></li>
+                    <li data-icon="check"><a href="#">Custom Team Orders</a></li>
+                </ul>
+            </div><!-- /collapsible -->
+            <div data-role="collapsible" data-inset="false">
+                <h3>Figure Skating Services</h3>
+                <ul data-role="listview">
+                    <li data-icon="check"><a href="#">Equipment Repairs</a></li>
+                    <li data-icon="check"><a href="#">Custom-Fit Skates</a></li>
+                  	<li data-icon="check"><a href="#">Sharpening</a></li>
+                </ul>
+            </div><!-- /collapsible -->
+            </div>
+       </div>
+        <footer data-role="footer">
+	        <p> &copy; 2013 Wesco Sports Center. All Rights Reserved.</p>
+        </footer>
+        </section>
+        <!-- This is the contact page -->
+    <section id="cont" data-role="page">
+        <header data-role="header">
+       <h1>Wesco Sports Center</h1>
+        <a href="#cont" class="ui-btn-right">Contact</a>
+        </header>
+        <nav data-role="navbar">
+        <ul>
+            <li><a href="#storeInfo" data-icon="info">Store Info</a></li>
+            <li><a href="#outfiters" data-icon="star">Brands</a></li>
+            <li><a href="#serv" data-icon="check">Services</a></li>
+        </ul>
+        </nav>
+        <div data-role="content">
+            <div id="contactForm">
+            	<h2>Contact Us<hr /></h2>
+        <p>For immediate assistance give us a call at <b>203.775.2227</b><hr /></p>
+    	<form name="contactform" method="post" action="send_form_email.php">
+ 			<label for="fullName">Full Name:</label>
+            <input type="text" name="fullName" id="fullName" value="" placeholder="full name"/>
+            <label for="userEmail">Email:</label>
+            <input type="email" name="userEmail" id="userEmail" value="" placeholder="email"/>
+            <label for="userPhone">Phone:</label>
+            <input type="tel" name="userPhone" id="userPhone" value="" placeholder="(xxx)-xxx-xxxx"/>
+            <label for="comments">Comments:</label>
+            <textarea name="userComments" id="userComments"></textarea>
+            <input type="submit" name="submit" value="Submit" id="formSubmit"/>
+      		</form>
+        	</div>
+        </div>
+        <footer data-role="footer">
+	        <p> &copy; 2013 Wesco Sports Center. All Rights Reserved.</p>
+        </footer>
+     </section>
+     
+</body>
+</html>

@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+#slider-wrapper {
+    height: 340px;
+    margin-bottom: 18px;   
+    width: 980px;
+ float:left;
+ position: relative;
+ z-index:998;
+}
+.nivoSlider {
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+ z-index:999;
+}
+.nivoSlider a {background-color: #fff;
+filter:alpha(opacity=0);
+opacity: 0;
+-webkit-opacity:0;
+-moz-opacity:0;
+-khtml-opacity:0;
+}
